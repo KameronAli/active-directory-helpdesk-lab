@@ -4,6 +4,10 @@
 
 This project simulates common Active Directory help desk and junior system administration tasks in a Windows Server environment. The lab focuses on Active Directory Domain Services, DNS, organizational unit structure, user account creation, group membership, password/account management, and shared folder configuration.
 
+## Lab Topology
+
+![Active Directory Lab Topology](network-diagram/AD-LAB-TOP.PNG)
+
 The goal of this lab was to practice account and access management tasks commonly seen in help desk and entry-level IT support roles.
 
 ## Lab Environment
