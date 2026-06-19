@@ -1,0 +1,19 @@
+Active Directory Help Desk Lab Summary
+
+Domain Controller:
+- Windows Server configured as the domain controller
+- Active Directory Domain Services installed
+- Domain created for lab environment
+
+Client Workstation:
+- Windows client joined to the domain
+- Domain user login tested successfully
+
+Administrative Tasks Practiced:
+- Created users
+- Created organizational units
+- Created security groups
+- Assigned users to groups
+- Reset user passwords
+- Configured shared folder permissions
+- Tested access from domain client
