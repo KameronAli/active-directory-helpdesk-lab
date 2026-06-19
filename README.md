@@ -1,104 +1,102 @@
-# Active Directory Help Desk Lab
+# Active Directory Help Desk Administration Lab
 
 ## Overview
 
-This project simulates a small Windows Active Directory environment used for help desk and junior system administration practice. The lab includes a Windows Server domain controller, organizational units, user accounts, security groups, domain-joined client testing, password reset practice, and shared folder permission validation.
+This project simulates common Active Directory help desk and junior system administration tasks in a Windows Server environment. The lab focuses on Active Directory Domain Services, DNS, organizational unit structure, user account creation, group membership, password/account management, and shared folder configuration.
 
-The goal of this lab was to practice common help desk and entry-level IT administration tasks in a realistic Windows domain environment.
+The goal of this lab was to practice account and access management tasks commonly seen in help desk and entry-level IT support roles.
 
 ## Lab Environment
 
-- Windows Server domain controller
-- Windows client workstation
+- Windows Server
 - Active Directory Domain Services
+- DNS
 - Active Directory Users and Computers
-- Organizational Units
+- Department-based organizational units
 - Domain user accounts
 - Security groups
-- Shared folders and permissions
-
-## Network / Domain Topology
-
-![Active Directory Lab Topology](network-diagram/ad-lab-topology.png)
+- Shared folders
 
 ## Key Tasks Completed
 
 - Installed and configured Active Directory Domain Services
 - Promoted Windows Server to a domain controller
-- Created organizational units for departments
-- Created domain user accounts
-- Created security groups for access control
+- Configured DNS role services
+- Created a structured OU layout
+- Created department-based user accounts
+- Created and managed security groups
 - Added users to appropriate groups
-- Joined a Windows client to the domain
-- Tested domain user login
-- Practiced password reset workflow
-- Configured shared folder access using group-based permissions
-- Validated access from a domain-joined workstation
+- Practiced password and account management options
+- Created department-based shared folders
+- Configured network sharing for departmental folders
+- Documented the lab setup with validation screenshots
 
 ## Active Directory Structure
 
-Example structure used in the lab:
+The domain was organized using a structured OU layout:
 
-| OU / Department | Purpose |
+| OU / Container | Purpose |
 |---|---|
-| IT | Technical/admin users |
-| HR | Human Resources users |
-| Sales | Sales department users |
-| Accounting | Accounting department users |
-| Disabled Users | Deactivated account storage/testing |
-| Security Groups | Group-based permission management |
+| COMPUTERS | Workstation organization |
+| DISABLED USERS | Disabled/deactivated account storage |
+| GROUPS | Security group management |
+| SERVERS | Server organization |
+| SERVICE ACCOUNTS | Service account organization |
+| USERS | Department-based user organization |
+
+Department user OUs included:
+
+| Department |
+|---|
+| Finance |
+| HR |
+| IT |
+| Marketing |
+| Sales |
 
 ## Validation Screenshots
 
 ### Domain Controller
 
-![Domain Controller](screenshots/domain-controller.png)
+![Domain Controller](screenshots/DOMAIN-CONTROLLER.PNG)
 
 ### Organizational Unit Structure
 
-![OU Structure](screenshots/ou-structure.png)
+![OU Structure](screenshots/OU-STRUCTURE.PNG)
 
 ### Active Directory Users
 
-![Active Directory Users](screenshots/active-directory-users.png)
+![AD Users](screenshots/AD-USERS.PNG)
+
+### User Account Creation
+
+![User Creation](screenshots/USER-CREATION.png)
 
 ### Group Membership
 
-![Group Membership](screenshots/group-membership.png)
+![Group Membership](screenshots/GROUP-MEMBERSHIP.PNG)
 
-### Password Reset Practice
+### Password Reset / Account Management
 
-![Password Reset](screenshots/password-reset.png)
+![Password Reset](screenshots/PW-RESET.png)
 
-### Shared Folder Permissions
+### Shared Folder Configuration
 
-![Shared Folder Permissions](screenshots/shared-folder-permissions.png)
+![Shared Folder](screenshots/SHARED-FOLDER.PNG)
 
-### Domain-Joined Client
+## Limitations / Next Steps
 
-![Domain Joined Client](screenshots/domain-joined-client.png)
-
-### Successful Domain Login Test
-
-![Login Test](screenshots/login-test.png)
-
-## Configuration Notes
-
-Additional notes are included in the `configs/` folder:
-
-- `lab-summary.txt`
-- `user-and-group-structure.txt`
-- `permissions-notes.txt`
+This version of the lab focuses on server-side Active Directory administration. A future expansion of the lab will include a separate Windows client joined to the domain for testing domain logins, mapped drives, and end-user access validation.
 
 ## Skills Demonstrated
 
 - Active Directory Domain Services setup
 - Domain controller configuration
+- DNS role verification
 - Organizational Unit management
-- User account creation and administration
+- User account creation
 - Security group management
-- Password reset workflow
-- Domain join troubleshooting
-- Shared folder and NTFS permission management
-- Help desk-style account and access support
-- Documentation of lab setup and validation evidence
+- Password and account-management workflow
+- Department-based folder sharing
+- Help desk-style account and access administration
+- Technical documentation using screenshots and configuration notes
