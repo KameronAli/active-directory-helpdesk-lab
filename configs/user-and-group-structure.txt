@@ -1,0 +1,24 @@
+User and Group Structure
+
+Organizational Units:
+- IT
+- HR
+- Sales
+- Accounting
+- Disabled Users
+- Security Groups
+
+Example Users:
+- IT user accounts placed under IT OU
+- HR user accounts placed under HR OU
+- Sales user accounts placed under Sales OU
+- Accounting user accounts placed under Accounting OU
+
+Security Groups:
+- HR-Share-Access
+- Sales-Share-Access
+- Accounting-Share-Access
+- IT-Admins or IT-Support
+
+Purpose:
+Groups were used to manage access to shared folders instead of assigning permissions directly to individual users.
