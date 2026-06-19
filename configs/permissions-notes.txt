@@ -1,0 +1,12 @@
+Permissions Notes
+
+Shared folder access was configured using group-based permissions.
+
+General approach:
+1. Create department security group in Active Directory.
+2. Add department users to the correct group.
+3. Create shared folder on the server.
+4. Assign share and NTFS permissions to the security group.
+5. Test access from a domain-joined client.
+
+This follows the principle of managing access through groups rather than individual user accounts.
